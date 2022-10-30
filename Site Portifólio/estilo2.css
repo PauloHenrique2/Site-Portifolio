@@ -1,0 +1,32 @@
+body , html
+{ 
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: white; 
+ font-family: 'Open Sans', sans-serif; 
+}
+
+#container
+{
+ height: 100vh;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 20vh 20vh 50vh;
+ grid-row: 10px;
+ grid-template-areas:"h""h"
+                     "m""m";
+}
+
+header
+{
+ grid-area: h;
+ text-align: center;
+}
+
+main
+{
+ grid-area: m;
+ text-align: center;
+}
+
